@@ -2,8 +2,10 @@
 import { askname } from '../src/cli.js';
 import { game1 } from './brain-even.js';
 import { game2 } from './brain-calc.js';
+import { game3 } from './brain-gcd.js';
 
 console.log('Welcome to the Brain Games!');
 const name = askname();
 game1(name);
 game2(name);
+game3(name);
