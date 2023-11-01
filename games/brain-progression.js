@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* eslint-disable no-continue */
 import redlineSync from 'readline-sync';
 import askname from '../src/cli.js';

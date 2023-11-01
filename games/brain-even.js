@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import redlineSync from 'readline-sync';
 import askname from '../src/cli.js';
 
