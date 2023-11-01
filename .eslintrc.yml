@@ -1,6 +1,5 @@
 env:
   node: true
-  browser: true
 extends:
    - 'airbnb-base'
 parserOptions:
@@ -12,4 +11,3 @@ rules:
     - error
     - ignorePackages
     - js: always
-linebreak-style: ["error", "windows"]
