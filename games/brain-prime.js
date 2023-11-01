@@ -29,6 +29,7 @@ export default function game5(userName) {
       return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 }
 
 game5(name);
