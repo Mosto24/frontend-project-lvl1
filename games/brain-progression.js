@@ -19,13 +19,13 @@ export default function game4(userName) {
       if (j === questionNumber) {
         num += progressionNum;
         result = num;
-        stringToPrint += ' .. ';
+        stringToPrint += '..';
         continue;
       }
       num += progressionNum;
       stringToPrint += ` ${num} `;
     }
-    console.log(`Question: ${stringToPrint}`);
+    console.log(`Question:${stringToPrint}`);
     const answer = Number(redlineSync.question('Your answer: '));
     if (answer === result) {
       console.log('Correct!');
