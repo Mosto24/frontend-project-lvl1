@@ -1,5 +1,8 @@
 import redlineSync from "readline-sync";
+import { askname } from '../src/cli.js';
 
+console.log('Welcome to the Brain Games!');
+const name = askname();
 function primality(n) {
     for(let i = 2; i < n; i++) {
        if(n % i === 0) return false;
@@ -18,9 +21,11 @@ export function game5(name) {
         if (answer === primality(number)) {
             console.log('Correct!');
         } else {
-            console.log(`'${copyAnswer}' is wrong answer ;(. Correct answer was '${primality(number)}'.`);
+            console.log(`'${copyAnswer}' is wrong answer ;(. Correct answer was '${copyAnswer == 'yes' ? 'no' : 'yes'}'.`);
             console.log(`Let's try again, ${name}!`);
             return;
         }
     }
 }
+
+game5(name);

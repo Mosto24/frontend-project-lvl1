@@ -1,5 +1,8 @@
 import redlineSync from "readline-sync";
+import { askname } from '../src/cli.js';
 
+console.log('Welcome to the Brain Games!');
+const name = askname();
 export function game2(name) {
     console.log('What is the result of the expression?');
     for (let i = 0; i < 3; i++) {
@@ -26,7 +29,7 @@ export function game2(name) {
                 console.log('Correct!');
             }
             if (answer !== (num1 - num2)) {
-                console.log(`${answer} is wrong answer ;(. Correct answer was '${num1 - num2}'.`);
+                console.log(`'${answer}' is wrong answer ;(. Correct answer was '${num1 - num2}'.`);
                 console.log(`Let's try again, ${name}!`);
                 return;
             }
@@ -38,7 +41,7 @@ export function game2(name) {
                 console.log('Correct!');
             }
             if (answer !== (num1 * num2)) {
-                console.log(`${answer} is wrong answer ;(. Correct answer was '${num1 * num2}'.`);
+                console.log(`'${answer}' is wrong answer ;(. Correct answer was '${num1 * num2}'.`);
                 console.log(`Let's try again, ${name}!`);
                 return;
             }
@@ -47,3 +50,5 @@ export function game2(name) {
     console.log(`Congratulations, ${name}!`)
 
 }
+
+game2(name);

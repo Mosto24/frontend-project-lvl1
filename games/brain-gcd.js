@@ -1,5 +1,8 @@
 import redlineSync from "readline-sync";
+import { askname } from '../src/cli.js';
 
+console.log('Welcome to the Brain Games!');
+const name = askname();
 
 function NOD (x, y) {
 	if (y > x) return NOD(y, x);
@@ -25,3 +28,5 @@ export function game3(name) {
     }
     console.log(`Congratulations, ${name}!`);
 }
+
+game3(name);

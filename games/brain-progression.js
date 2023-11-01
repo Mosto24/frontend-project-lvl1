@@ -1,5 +1,8 @@
 import redlineSync from "readline-sync";
+import { askname } from '../src/cli.js';
 
+console.log('Welcome to the Brain Games!');
+const name = askname();
 export function game4(name) {
     console.log('What number is missing in the progression?');
     for (let i = 0; i < 3; i++) {
@@ -30,3 +33,5 @@ export function game4(name) {
     }
     console.log(`Congratulations, ${name}!`);
 }
+
+game4(name);
