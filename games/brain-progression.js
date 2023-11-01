@@ -19,7 +19,7 @@ export default function game4(userName) {
       if (j === questionNumber) {
         num += progressionNum;
         result = num;
-        stringToPrint += ' ... ';
+        stringToPrint += ' .. ';
         continue;
       }
       num += progressionNum;
